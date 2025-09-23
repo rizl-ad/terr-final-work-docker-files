@@ -60,7 +60,7 @@ def get_db_connection():
             user=db_user,
             password=db_password,
             database=db_name,
-            ssl_disabled=True
+            ssl_ca="root.crt"
         )
         yield db
     finally:
