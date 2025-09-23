@@ -37,7 +37,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
     volumes:
-     - ./root.crt:/app/root.crt
+     - ./root.crt:/app/root.crt:rw
     networks:
       backend:
         ipv4_address: 172.20.0.5
