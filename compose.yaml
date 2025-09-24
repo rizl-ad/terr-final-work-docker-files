@@ -28,8 +28,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.python
-    image: python:3.12-slim
-    container_name: web_terr_final_work
+    image: python_web_app_terr_final_work:3.12-slim
+    container_name: web_app_terr_final_work
     restart: on-failure
     environment:
       DB_HOST: ${DB_HOST}
